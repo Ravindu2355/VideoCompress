@@ -6,7 +6,7 @@ hachoir
 tgcrypto
 pyrogram
 motor
-https://github.com/Tinche/aiofiles/archive/master.zip
+git+https://github.com/Tinche/aiofiles.git@v0.8.0#egg=aiofiles
 dnspython
 Flask==1.1.2
 gunicorn==20.1.0
