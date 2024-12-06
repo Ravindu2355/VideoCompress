@@ -45,7 +45,7 @@ async def help_message_f(client, message):
             if user.status == "kicked":
                await message.reply_text(
                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
-                   parse_mode="markdown",
+                   #parse_mode="markdown",
                    disable_web_page_preview=True
                )
                return
@@ -59,13 +59,13 @@ async def help_message_f(client, message):
                         ]
                     ]
                 ),
-                parse_mode="markdown"
+                #parse_mode="markdown"
             )
             return
         except Exception:
             await message.reply_text(
                 text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
-                parse_mode="markdown",
+                #parse_mode="markdown",
                 disable_web_page_preview=True
             )
             return
