@@ -350,7 +350,7 @@ async def incoming_compress_message_f(bot, update):
         supports_streaming=True,
         duration=duration,
         thumb=thumb_image_path,
-        reply_to_message_id=update.message_id,
+        reply_to_message_id=update.id,
         progress=progress_for_pyrogram,
         progress_args=(
           bot,
