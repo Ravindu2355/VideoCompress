@@ -44,7 +44,7 @@ from bot.helper_funcs.utils import(
   delete_downloads
 )
 
-LOGS_CHANNEL = -1001283278354
+LOGS_CHANNEL = -1002327876975
 db = Database(DATABASE_URL, SESSION_NAME)
 CURRENT_PROCESSES = {}
 CHAT_FLOOD = {}
@@ -62,7 +62,7 @@ async def incoming_start_message_f(bot, update):
                await bot.send_message(
                    chat_id=update.chat.id,
                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
-                   parse_mode="markdown",
+                   #parse_mode="markdown",
                    disable_web_page_preview=True
                )
                return
@@ -77,14 +77,14 @@ async def incoming_start_message_f(bot, update):
                         ]
                     ]
                 ),
-                parse_mode="markdown"
+                #parse_mode="markdown"
             )
             return
         except Exception:
             await bot.send_message(
                 chat_id=update.chat.id,
                 text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
-                parse_mode="markdown",
+                #parse_mode="markdown",
                 disable_web_page_preview=True)
             return
     await bot.send_message(
@@ -115,7 +115,7 @@ async def incoming_compress_message_f(bot, update):
              await bot.send_message(
                  chat_id=update.chat.id,
                  text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
-                 parse_mode="markdown",
+                 #parse_mode="markdown",
                  disable_web_page_preview=True
              )
              return
@@ -130,14 +130,14 @@ async def incoming_compress_message_f(bot, update):
                       ]
                   ]
               ),
-              parse_mode="markdown"
+              #parse_mode="markdown"
           )
           return
       except Exception:
           await bot.send_message(
               chat_id=update.chat.id,
               text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
-              parse_mode="markdown",
+              #parse_mode="markdown",
               disable_web_page_preview=True
           )
           return
