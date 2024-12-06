@@ -1,3 +1,4 @@
+setuptools-scm>=6.0
 aiohttp
 Pillow
 psutil
